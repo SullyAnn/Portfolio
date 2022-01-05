@@ -1,0 +1,68 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+a{ 
+    text-decoration: none;
+}
+.icone path:nth-child(1){
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: anim 5s ease forwards;
+}
+
+@keyframes anim {
+    to{
+        stroke-dashoffset: 0;
+    }
+    
+}
+
+.entranceButton{
+    border-radius: 40px;
+    padding: 10px;
+    width: fit-content;
+    align-self: center;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    background-color: lightcoral;
+    margin-top: -40px;
+    opacity: 0;
+    font-family: "Roboto";
+
+}
+
+.animEnter{
+    opacity: 1;
+    margin-top: 20px;
+    transition: ease-out ;
+    -webkit-transition-duration: 0.75s;
+    transition-duration:  0.75s; ;
+
+}
+
+
+/* ----------------------------------------- RESPONSIVE --------------------------------------- */
+
+@media only screen and (device-width: 768px), 
+       only screen and (max-width: 768px) {
+
+.icone{
+    width: 300px;
+}
+
+.animEnter{
+    margin-top: 0;
+}
+.entranceButton{
+    font-size: 12px;
+    padding: 7px;
+}
+
+}
