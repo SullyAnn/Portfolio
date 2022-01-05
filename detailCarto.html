@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio">
+        
+        <!-- LINKS -->
+        <link rel="stylesheet" href="./css/galeryStyle.css"/>
+        <link rel="stylesheet" href="./css/detailStyle.css">
+        <link rel="stylesheet" href="./css/transitions.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+
+        <title>Portfolio Sully-Ann Sorimoutou</title>
+    </head>
+
+    <body>
+        <header>
+            <div id="navBar">
+                <h1 class="mediumSpacement"> <a href="./index.html">SULLY-ANN SORIMOUTOU</a></h1>
+                <h2><a href="">Menu</a></h2>
+            </div>
+            
+        </header>
+
+         <!-------------------- TRANSITIONS -------------------->
+
+         <div id = "" class="transition1 is-active"></div>
+
+         <!-------------------- MENU SECTION -------------------->
+
+         <section id="menuOpen" class="hidden">
+            <span id="close"><a href="" >X</a></span>
+
+            <div id="nav">
+                <div class="menuNav">
+                    <h2>CONTACT</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/sully-ann-sorimoutou-a75a32174/">LinkedIn</a></li>
+                        <li><a href="mailto: sori.sully@gmail.com">Mail</a></li>
+                    </ul>
+                </div>
+    
+                <div class="menuNav">
+                    <h2>MENU</h2>
+                    <ul>
+                        <li><a href="./index.html">Homepage</a></li>
+                        <li><a href="./detailProgrammation.html">Back-end portfolio</a></li>
+                        <li><a href="./detailHP.html">Harry Potter's world</a></li>
+                        <li><a href="./detailHyper.html">Hyper-anthropos Simulation</a></li>
+                        <li><a href="./detailVeggie.html">The Veggie</a></li>
+                        <li><a href="./detailCarto.html" style="font-weight: 600;">The artists of Père Lachaise</a></li>
+                        <li><a href="./detailFoot.html">FIFA Women's World Cup</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <main id="snaphere" >
+
+        <!--###################################################-->
+        <!--################ DETAILS SECTIONS #################-->
+        <!--###################################################-->
+
+        <!-------------------- PROGRAMMATION -------------------->
+   
+            <section id ="detailProgrammation"  class="boxGeneral boxDetail "> 
+                
+                <div id="explDetail" class= "hlineDetail snap ">
+                    <p class="subtitle subDetail"> GRAPHIC DESIGN</p>
+                    <h2 style ="background-color: #B3F0DF;"class="titleGeneral titleDetail mediumSpacement presentationDetail">THE ARTISTS OF PERE LACHAISE</h2>
+                </div> 
+
+                <div class="fullPicture snap">
+                    <img class="pictureGeneral"src="./images/projet_cimetiere-min.jpg" alt="illustration représentant une femme devant un ordinateur">
+                </div>
+
+                <div id = "detailContent" class="snap">
+
+                    <div id="detailGroupe">
+                         <div class="swiper">
+ 
+                             <div class=" imageDetail swiper-wrapper">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/projet_cimetiere-min-2.jpg">
+                                 <img class="swiper-slide pictureGeneral" src="./images/projet_cimetiere_0.png">
+                                 <img class="swiper-slide pictureGeneral" src="./images/projet_cimetiere_1.png">
+                                 <img class="swiper-slide pictureGeneral" src="./images/projet_cimetiere_2.png">
+                                 <img class="swiper-slide pictureGeneral" src="./images/projet_cimetiere_3.png">
+                                 <img class="swiper-slide pictureGeneral" src="./images/projet_cimetiere_4.png">
+                                 <img class="swiper-slide pictureGeneral" src="./images/projet_cimetiere_5.png">
+                                 <img class="swiper-slide pictureGeneral" src="./images/projet_cimetiere_6.png">
+
+                             </div>
+ 
+                             <!-- If we need navigation buttons -->
+                             <div class="swiper-button-prev"></div>
+                             <div class="swiper-button-next"></div>
+ 
+                         </div>
+                         
+                         <div id="explanationDetail">   
+                             <p  class="">
+                                 This project has been done in group of two. It is a map of the Père Lachaise Cemetery.  
+                                 We wanted to present this area through the talent of the artist that are burried there. 
+                                 This interpretation permit us to make of this morose place, a colorfull and dynamic area. 
+                                 Thus, we decided to created a map in a refined and minimalist graphic style, as if the dead people 
+                                 (painters, sculptors, collectors, photographers, and achitects) illuminated the cemetery thanks
+                                 to their creativity.  
+                             </p> 
+                         </div> 
+ 
+                     </div>
+                     <a href="./index.html" class="backButton"> ← Back</i>  
+                </div>
+
+            </section>
+
+        </main>
+    
+     <!-- JAVASCRIPT LINKS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/detail.js"></script>
+     
+    </body>
+</html>
