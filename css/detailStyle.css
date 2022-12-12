@@ -9,6 +9,9 @@ header a {
     color: white;
 }
 
+strong{
+    font-weight: 600;
+}
 
 /* -------------- Details -------------- */
 
@@ -60,7 +63,7 @@ header a {
 
 .titleDetail{
 
-    font-size: 65px;
+    font-size: 55px;
 }
 
 #explDetail{
@@ -73,9 +76,10 @@ header a {
 
 #explanationDetail{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5em;
     width: 550px;
+    text-align: justify;
 }
 #backButton{
     border-radius: 40px;
@@ -194,4 +198,247 @@ header a {
     align-self: start;
     padding-inline: 30px;
     padding-block: 20px;
+}
+
+/* ----------------------------------------- RESPONSIVE --------------------------------------- */
+
+@media  screen and (device-width: 640px), 
+        screen and (max-width: 640px) {
+        
+        body{
+            scroll-snap-type: none;
+        }
+        header{
+            width: 55px;
+        }
+        .fullPicture{
+            display: none;
+        }
+        #detailGroupe{
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .swiper{
+            width: 300px;
+            border-radius: 150px;
+            height: 300px;
+        }
+        .titleDetail{
+            font-size: 15px;
+        }
+        .presentationDetail{
+            display: none;
+        }
+        .hlineDetail:after{
+            display: none;
+        }
+        p{
+            margin-bottom: 0;
+            margin-inline: 20px;
+        }
+        .subDetail{
+            display: none;
+        }
+        .backButton{
+           padding: 0;
+           margin: 20px;
+           font-size: 14px;
+        }
+        #explanationDetail{
+            font-size: 13px;
+            width: 100%;
+        }
+        #explDetail{
+            display: none;
+        }
+        .swiper-button-prev::after, .swiper-button-next::after{
+            font-size: 20px !important ;
+        }
+        #detailContent{
+            height: 100%;
+        }
+        .boxDetail{
+            margin-block: 20px;
+        }
+        .snap{
+            scroll-snap-align: unset;
+        }
+        .menuNav ul li a {
+            font-size: 13px;
+        }
+                
+}
+
+@media  screen and  (min-width: 641px) and (max-width: 960px)  {
+    
+    header{
+        width: 55px;
+    }
+    .fullPicture{
+        display: none;
+    }
+    #detailGroupe{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .swiper{
+        width: 300px;
+        border-radius: 150px;
+        height: 300px;
+    }
+    .titleDetail{
+        font-size: 15px;
+    }
+    .presentationDetail{
+        display: none;
+    }
+    .hlineDetail:after{
+        display: none;
+    }
+    p{
+        margin-bottom: 0;
+        margin-inline: 20px;
+    }
+    .subDetail{
+        display: none;
+    }
+    .backButton{
+       padding: 0;
+       margin-inline: 20px;
+       margin-bottom: 20px;
+       font-size: 14px;
+    }
+    #explanationDetail{
+        font-size: 13px;
+        width: 100%;
+    }
+    #explDetail{
+        display: none;
+    }
+    .swiper-button-prev::after, .swiper-button-next::after{
+        font-size: 20px !important ;
+    }
+}
+@media  screen and (min-width: 767px) and (max-width: 1023px) {
+    
+    header{
+        width: 55px;
+    }
+    .fullPicture{
+        display: none;
+    }
+    #detailGroupe{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .swiper{
+        width: 300px;
+        border-radius: 150px;
+        height: 300px;
+    }
+    .titleDetail{
+        font-size: 15px;
+    }
+    .presentationDetail{
+        display: none;
+    }
+    .hlineDetail:after{
+        display: none;
+    }
+    p{
+        margin-bottom: 0;
+        margin-inline: 20px;
+    }
+    .subDetail{
+        display: none;
+    }
+    .backButton{
+       padding: 0;
+       margin-inline: 20px;
+       margin-bottom: 20px;
+       font-size: 14px;
+    }
+    #explanationDetail{
+        font-size: 15px;
+        width: 50%;
+    }
+    #explDetail{
+        display: none;
+    }
+    .swiper-button-prev::after, .swiper-button-next::after{
+        font-size: 20px !important ;
+    }
+
+}
+@media  screen and (min-width: 1024px) and (max-width: 1440px) {
+    .titleDetail{
+        font-size: 40px;
+    }
+    .hlineDetail:after{
+        height: 165px;
+        margin-top: -165px;
+    }
+    .swiper{
+        width: 450px;
+        height: 350px;
+    }
+    #explanationDetail{
+        font-size: 15px;
+        width: 50%;
+        font-size: 16px;
+    }
+}
+@media  screen and (min-width: 1441px) and (max-width: 1960px) {
+
+}
+@media  screen and (min-width: 1961px) and (max-width: 2560px) {
+    .titleDetail{
+        font-size: 105px;
+    }
+    .hlineDetail:after{
+        margin-top: -255px;
+        height: 255px;
+    }
+    .subtitle{
+        font-size: 25px;
+    }
+    .swiper{
+        width: 1000px;
+        height: 750px;
+    }
+    #explanationDetail{
+        font-size: 35px;
+        width: 1000px;
+    }
+    .backButton{
+        font-size: 30px;
+        padding: 50px;
+    }
+}
+@media  screen and (width: 1920px) and (height : 1080px) {
+    .titleDetail{
+        font-size: 75px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .hlineDetail:after{
+        margin-top: -220px;
+        height: 220px;
+    }
+    .swiper{
+        width: 800px;
+        height: 600px;
+    }
+    #explanationDetail{
+        font-size: 30px;
+        width: 800px;
+    }
+    .backButton{
+        font-size: 25px;
+        padding: 30px;
+    }
 }

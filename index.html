@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,11 @@
         <!-- LINKS -->
         <link rel="stylesheet" href="./css/galeryStyle.css"/>
         <link rel="stylesheet" href="./css/transitions.css"/>
+        <link rel="stylesheet" href="./css/normalize.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon" />
+
 
 
         <title>Portfolio Sully-Ann Sorimoutou</title>
@@ -26,7 +29,7 @@
 
         <!-------------------- TRANSITIONS -------------------->
 
-        <div  id = "" class="transition1 is-active"></div>
+        <div class="transition1 is-active"></div>
 
         <!-------------------- MENU SECTION -------------------->
 
@@ -38,7 +41,7 @@
                     <h2>CONTACT</h2>
                     <ul>
                         <li><a href="https://www.linkedin.com/in/sully-ann-sorimoutou-a75a32174/">LinkedIn</a></li>
-                        <li><a href="mailto: sori.sully@gmail.com">Mail</a></li>
+                        <li><a href="mailto:sori.sully@gmail.com">Mail</a></li>
                     </ul>
                 </div>
     
@@ -64,58 +67,65 @@
 
         <!-------------------- ABOUT SECTION -------------------->
 
-        <section id = "" class="hline boxGeneral snap none">
+        <section class="hline boxGeneral snap none">
             <div id="contentAbout"> 
                 <div id="pictureAbout">
-                    <img class="pictureGeneral"src="./images/illu.png" 
-                    alt="illustration représentant une femme devant un ordinateur">
+                    <img class="pictureGeneral" src="./images/illu.png" 
+                    alt="illustration of Sully-Ann Sorimoutou using a computer">
                 </div>
 
                 <div>
                     <h2 id="titleAbout">WELCOME IN MY PORTFOLIO</h2>
                     <p class="paraGeneral paraAbout">
-                        Hello and welcome in my portfolio, I am Sully-Ann Sorimoutou. I am currently completing an engineer degree in IMAC (Image Multimedia
-                        Audiovisual and Communication) at the ESIPE (Ecole Superieur d’ingénieur de Paris-Est).
-                        I am looking for an internship which is an opportunity for me to work in an area that really interests me. 
-                        In fact, next year I would like to specialize in web development and later become a front-end web developer.
-                        
+                        Hello and welcome in my portfolio, I am Sully-Ann Sorimoutou. I am currently completing an <strong>engineer degree in <a href="https://www.ingenieur-imac.fr/">
+                        <abbr style="text-decoration: underline;" title="Image Multimedia Audiovisual and Communication">IMAC</abbr></a> </strong>  
+                        at the <abbr title="Ecole Superieur d’ingénieur de Paris-Est">ESIPE</abbr>.
+                        I am looking for an end-of-study internship which is an opportunity for me to work in an area that really interests me. 
+                        In fact, for this last year of study I chose to specialize in web development in order to become a <strong> full stack developer</strong>.
                         </p>
                 </div>
             </div>
-            <i class="material-icons">arrow_circle_down</i>  
-
+        
         </section>
 
         <!-------------------- SKILLS SECTION -------------------->
 
         <section id = "skillSection" class="hline boxGeneral snap none">
             <div class="boxSkill">
-                <h2 class="line">GRAPHIC DESIGN</h2>
-                <p class="paraSkill"> Holder of a digital art degree, I had the opportunity to develop my creativity and informatic skill
-                    thanks to several projects. In fact, am used to work with DTP (desktop publishing) devices such as Photoshop, Illustrator or Premiere Pro.
+                <h2 class="line" style="text-align: center;">FRONT END DEVELOPMENT</h2>
+                <p class="paraSkill"> I am used to work with several languages such as <strong> HTML 5, CSS and
+                    Javascript</strong>. As a matter of fact, it is thanks to a few projects and experiences that I learn several javascript frameworks such as 
+                    <strong>Vue, Nuxt, React, Next,</strong> or <strong>Node.js</strong>
+                     I had the opportunity to create several websites for school projects or internships. Indeed, I worked for 4 mounths in an Hungarian company 
+                     at Budapest were I mainly had to deal with the migration of the application <strong>VueStoreFront 1 to VueStoreFront 2 </strong>. 
+                </p>
+            </div>
+
+            <div class="boxSkill">
+                <h2 class="line" style="text-align: center;">BACK END DEVELOPMENT</h2>
+                <p class="paraSkill"> I also feel at ease with back end development. In fact, it is thanks to many project that I learnt <strong> Php, and SQL  </strong>.
+                    But I prefer working with most recent technologies such as <strong>Node.js or Express </strong>. Also I had the opportunity to 
+                    discover through projects <strong> Firebase and the Firestore </strong>. Indeed I am actually working on a project using Firebase authentification and
+                    Firestore as a database. 
+                    Finally, I am able to work with <strong> Docker</strong> and a container architecture. As a matter of fact, during my previous internship I had to 
+                    manage some Docker container.
                 </p>
             </div>
             <div class="boxSkill">
-                <h2 class="line">WEB DEVELOPMENT</h2>
-                <p class="paraSkill"> I am used to work with several languages such as HTML 5, CSS and
-                    Javascript. As a matter of fact, it is thanks to a few projects and experiences that I feel at ease
-                    with front end development. In addition, I am also starting to learn back-end development and the framework node.js for
-                    a project I am currently working on.
+                <h2 class="line">UI / UX DESIGN</h2>
+                <p class="paraSkill"> Holder of a digital art degree, I had the opportunity to develop my creativity
+                    thanks to several projects. In fact, am used to create the wireframe and design system of the website I am working on. I am used to work with <strong> Figma </strong> and <strong> Adobe XD.</strong>
+                    Moreover I did preparatory class in applied art, were I developped my curiosity and my art knowledge. Thanks to this, I 
+                    always come up with new ideas. 
                 </p>
             </div>
-            <div class="boxSkill">
-                <h2 class="line">PROGRAMMING</h2>
-                <p class="paraSkill"> As an engineer student, I learnt the good practices in programming. 
-                    In fact, I am used to work with several design pattern, which helps for the implementation of the code. 
-                    Moreover, I am at ease with team software like GIT an TRELLO thanks to few school projects. 
-                </p>
-            </div>
+            
         </section>
        
 
-        <!--###################################################-->
-        <!--################ GALLERY SECTIONS #################-->
-        <!--###################################################-->
+        <!---------------------------------------------------->
+        <!----------------- GALLERY SECTIONS ----------------->
+        <!---------------------------------------------------->
 
         <!-------------------- PROGRAMMATION -------------------->
         <section id="projects"> 
@@ -136,12 +146,12 @@
                 <section id ="Projet_BackEnd" class="boxGeneral snap">
                     <div class="contentGallery"> 
                         <a href="./detailProgrammation.html" class="shapePictureGallery">
-                            <img class="pictureGeneral" src="./images/PORTFOLIO_BACK_0-min.png" alt="mock-up d'un ordinateur">
+                            <img class="pictureGallery pictureGeneral" src="./images/PORTFOLIO_BACK_0-min.png" alt="mock-up d'un ordinateur">
                         </a>
 
-                        <div id="presentationGallery">
-                            <h2 data-aos="fade-down" data-aos-duration="2000" class="titleGeneral mediumSpacement">Back-end portfolio</h2>
-                            <p data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000" class="paraGeneral right">
+                        <div class="presentationGallery">
+                            <h2 data-aos="fade-down" data-aos-duration="1000" class="titleGeneral mediumSpacement">Back-end portfolio</h2>
+                            <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" class="paraGallery paraGeneral right">
                             Team project created last year for a back-end developpement class. 
                             It is a dynamic website linked to a database by using PHP, AJAX, and Javascript.
                             </p>
@@ -153,12 +163,12 @@
                     <div class="contentGallery alternate"> 
                         
                             <a class="shapePictureGallery"  href="./detailHP.html"> 
-                                <img class="pictureGeneral" src="./images/projet_hp_0.png" alt="mock-up d'un ordinateur"> 
+                                <img  class=" pictureGallery pictureGeneral" src="./images/projet_hp_0.png" alt="mock-up d'un ordinateur"> 
                             </a>
 
-                        <div  id="presentationGallery">
-                            <h2 data-aos="fade-down" data-aos-duration="2000"class="titleGeneral mediumSpacement">Harry Potter's world</h2>
-                            <p data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000" class="paraGeneral ">
+                        <div  class="presentationGallery">
+                            <h2 data-aos="fade-down" data-aos-duration="1000" class="titleGeneral mediumSpacement">Harry Potter's world</h2>
+                            <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" class=" paraGallery paraGeneral ">
                             Team project created last year for an introduction to web developpement class.
                             It is a dynamic website connected to an API by using Javascript. 
                             </p>
@@ -169,13 +179,13 @@
                 <section id ="Projet_Hyper" class="boxGeneral snap">
                     <div class="contentGallery"> 
                         <a href="./detailHyper.html" class="shapePictureGallery">
-                            <img class="pictureGeneral" src="./images/PROJET_HYPER-min.png" alt="mock-up d'un ordinateur">
+                            <img  class=" pictureGallery pictureGeneral" src="./images/PROJET_HYPER-min.png" alt="mock-up d'un ordinateur">
 
                         </a>
 
-                        <div id="presentationGallery">
-                            <h2 data-aos="fade-down" data-aos-duration="2000" class="titleGeneral mediumSpacement">Hyper-anthropos Simulation</h2>
-                            <p data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000" class="paraGeneral right">
+                        <div class="presentationGallery">
+                            <h2 data-aos="fade-down" data-aos-duration="1000" class="titleGeneral mediumSpacement">Hyper-anthropos Simulation</h2>
+                            <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" class="paraGallery paraGeneral right">
                             Team project created during my last year of digital art degree. It is a video game which deals with 
                             the pollution produced by the humanity. It has been created with Unity and C#.   
                             </p>
@@ -186,14 +196,14 @@
                 <section id ="Projet_Veggie" class="boxGeneral snap">
                     <div class="contentGallery alternate"> 
                         <a href="./detailVeggie.html" class="shapePictureGallery">
-                            <img class="pictureGeneral" src="./images/PROJET_VEGGIE-min.png" alt="mock-up d'un ordinateur">
+                            <img class="pictureGallery pictureGeneral" src="./images/PROJET_VEGGIE-min.png" alt="mock-up d'un ordinateur">
                         </a>
 
-                        <div  id="presentationGallery">
-                            <h2 data-aos="fade-down" data-aos-duration="2000"class="titleGeneral mediumSpacement">The Veggie</h2>
-                            <p data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000" class="paraGeneral">
+                        <div  class="presentationGallery">
+                            <h2 data-aos="fade-down" data-aos-duration="1000" class="titleGeneral mediumSpacement">The Veggie</h2>
+                            <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" class="paraGallery paraGeneral">
                             Motion design project created last year for an audiovisual class. 
-                            It is a fictive add that I made with After Effects. 
+                            It is a fictive add made with After Effects. 
                             </p>
                         </div> 
                     </div>
@@ -202,14 +212,14 @@
                 <section id ="Projet_Cimetiere" class="boxGeneral snap">
                     <div class="contentGallery"> 
                         <a href="./detailCarto.html" class="shapePictureGallery">
-                            <img class="pictureGeneral" src="./images/PROJET_CIMETIERE-min.jpg" alt="cartographie du cimetière père lachaise">
+                            <img class="pictureGallery pictureGeneral" src="./images/PROJET_CIMETIERE-min.jpg" alt="cartographie du cimetière père lachaise">
                         </a>
 
-                        <div id="presentationGallery">
-                            <h2 data-aos="fade-down" data-aos-duration="2000" class="titleGeneral mediumSpacement">The artists of Père Lachaise</h2>
-                            <p data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000" class="paraGeneral right">
+                        <div class="presentationGallery">
+                            <h2 data-aos="fade-down" data-aos-duration="1000" class="titleGeneral mediumSpacement">The artists of Père Lachaise</h2>
+                            <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" class="paraGallery paraGeneral right">
                             Team project created last year for a design class. 
-                            It is a map of a famous parisian cemetery that we made with Illustrator. 
+                            It is a map of a famous parisian cemetery made with Illustrator. 
                             </p>
                         </div> 
                     </div>
@@ -218,12 +228,12 @@
                 <section id ="Projet_Foot" class="boxGeneral snap">
                     <div class="contentGallery alternate"> 
                         <a href="./detailFoot.html" class="shapePictureGallery">
-                            <img class="pictureGeneral" src="./images/projet_foot_0-min.jpg" alt="illustration représentant une femme devant un ordinateur">
+                            <img class="pictureGallery pictureGeneral" src="./images/projet_foot_0-min.jpg" alt="illustration représentant une femme devant un ordinateur">
                         </a>
 
-                        <div  id="presentationGallery">
-                            <h2 data-aos="fade-down" data-aos-duration="2000"class="titleGeneral mediumSpacement">FIFA Women's world cup</h2>
-                            <p data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000" class="paraGeneral ">
+                        <div  class="presentationGallery">
+                            <h2 data-aos="fade-down" data-aos-duration="1000" class="titleGeneral mediumSpacement">FIFA Women's world cup</h2>
+                            <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" class="paraGallery paraGeneral ">
                             Project created during my digital art degree for a design class.
                             It is a serie of 3 advertizing posters about the woman soccer world cup.     
                             </p>

@@ -1,31 +1,13 @@
 
 
 /* ------------ TYPOGRAPHIES ------------ */
-@font-face {
-    font-family: "Futura";
-    src: url("./futura/Futura\ Book\ font.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap');
 
-@font-face {
-    font-family: "Futura";
-    src: url("./futura/futura\ medium\ bt.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Futura";
-    src: url("./futura/Futura\ Heavy\ font.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
 
 /* -------------- ANIMATIONS -------------- */
 @keyframes slideIn {
     from{
-        right: -500px;
+        right: -3000px;
     }
     to{
         right: 0px;
@@ -38,7 +20,7 @@
         right: 0px;
     }
     to{
-        right: -500px;
+        right: -3000px;
     }
 }
 
@@ -57,7 +39,7 @@ body{
 body{
     background-color: #FAFAFA;
     color: #2E2E2E;
-    font-family: 'Futura';
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
     overflow-x: hidden;
 }
@@ -71,7 +53,9 @@ a {
     text-decoration: none;
     color: #2E2E2E;
 }
-
+abbr{
+    text-decoration: none;
+}
 a:hover {
     color: lightblue;
 }
@@ -88,6 +72,10 @@ li {
     letter-spacing: 0.1em;
 }
 
+strong{
+    font-weight: 600;
+}
+
 /* -------------- header -------------- */
 
 header{
@@ -96,7 +84,7 @@ header{
     display: flex;
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 15;
     transition: 0.2s;
     
 }
@@ -113,10 +101,11 @@ header{
 header h1,h2{
     margin: 0;
     font-size: 18px;
+    font-weight: 600;
 }
 
 header h2{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .filterMode{
@@ -137,7 +126,7 @@ header h2{
 }
 
 .hidden{
-    right: -484px;
+    right: -3000px !important;
 }
 
 .hiddenOut{
@@ -153,7 +142,7 @@ header h2{
     display: flex;
     align-items: flex-start;
     padding: 25px;
-    font-weight: 300;  
+    font-weight: 400;  
 }
 
 #nav{
@@ -216,15 +205,14 @@ header h2{
 .titleGeneral{
     margin-block: 0;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 65px;
     line-height: initial;
     text-align: end;
-    -webkit-text-stroke: 2px;
 }
 
 .subtitle{ 
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     color: #ffd6d6;
 }
 
@@ -239,9 +227,10 @@ header h2{
 
 
 .paraGeneral{
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 1.5em;
+    text-align: justify;
 }
 
 .hline{
@@ -258,19 +247,23 @@ header h2{
 }
 
 #pictureAbout{
-    width: 450px;
-    height: 360px;
+    width: 420px;
+    height: 330px;
     margin-right: 40px;
 }
 
 #titleAbout{
     margin-block: 0;
-    font-weight: 500;
-    font-size: 70px;
-    -webkit-text-stroke: 3px;
+    font-weight: 700;
+    font-size: 67px;
     color: white;
     line-height: initial;
+    letter-spacing: 0.02em
 }
+#titleAbout abbr {
+    text-decoration: underline;
+}
+
 .paraAbout{
     margin-bottom: 0;
 }
@@ -293,12 +286,12 @@ header h2{
 #skillSection{
     flex-direction: row;
     background-color: #d6fff3;
-    padding-inline: 200px;
+    padding-inline: 150px;
 }
 .boxSkill{
     background-color: white;
-    width: 200px;
-    height: 45vh;
+    width: 230px;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -309,7 +302,7 @@ header h2{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .line:after{
@@ -321,9 +314,10 @@ header h2{
     margin-top: 10px;
 }
 .paraSkill{
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5em;
     font-size: 15px;
+    text-align: center;
 }
 
 /* -------------- Gallery -------------- */
@@ -355,7 +349,7 @@ header h2{
     transform: scale(0.95);
 }
 
-#presentationGallery{
+.presentationGallery{
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -379,7 +373,7 @@ header h2{
 
 .hlineGallery span{
     margin-bottom: 10px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #detailButton{
@@ -417,7 +411,7 @@ header h2{
 .alternate .paraGeneral{
     text-align: start;
 }
-.alternate #presentationGallery{
+.alternate .presentationGallery{
     margin-right: 0;
     margin-left: -100px;
 }
@@ -453,40 +447,81 @@ header h2{
 #sideNav ul li a:hover{
     color: lightblue;
 }
+.menuNav ul li a{
+    font-size: 15px;
+}
 
 /* ----------------------------------------- RESPONSIVE --------------------------------------- */
 
-@media only screen and (device-width: 768px), 
-       only screen and (max-width: 768px) {
+@media only screen and (max-width: 424px) {
 
 header {
-    width: auto;
-}
-header h1, h2 {
-    font-size: 14px;
+    width: 55px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #2e2e2e;
 }
 
+header h1{
+    display: none;
+}
+header h2 {
+    font-size: 14px;
+    color: white;
+}
+header h1, h2{
+    font-size: 16px;
+}
+ul{
+    font-size: 13px;
+}
+a{
+    color: unset;
+}
+abbr{
+    text-decoration: none;
+}
 #navBar{
     padding-inline: 20px;
 }
-
-#boxGeneral{
-    flex-direction: unset;
+#nav{
+    flex-direction: column;
+}
+.snap{    
+    scroll-snap-align: start;
 }
 
 #menuOpen{
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    text-align: end;
+    align-items: center;
+}
+#close{
+    align-self: flex-end;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.menuNav{
+    padding: 15px;
+    width: 90%;
+    align-items: start;
+    text-align: start;
 }
 #contentAbout{
-    margin-top: 30px;
+    margin-top: 0;
     flex-direction: column;
     padding-inline: 40px;
 }
 
 #titleAbout{
-    font-size: 20px;
-    -webkit-text-stroke: 0px;
+    font-size: 18px;
 }
 
 #pictureAbout{
@@ -501,7 +536,8 @@ header h1, h2 {
 }
 
 .paraGeneral{
-    font-size: 15px;
+    font-size: 13px;
+    margin: 0;
 }
 
 #skillSection{
@@ -513,6 +549,13 @@ header h1, h2 {
 .boxSkill{
     margin: 20px;
     align-self: center;
+    justify-content: center;
+    height: 75vh;
+    padding: 30px;
+    scroll-snap-align: center;
+}
+.paraSkill{
+    font-size: 13px;
 }
 .contentGallery{
     flex-direction: column;
@@ -523,21 +566,580 @@ header h1, h2 {
 }
 .shapePictureGallery{
     padding: 0;
-    width: auto;
-    height: 415px;
+    width: 280px;
+    height: 280px;
 }
-#presentationGallery{
+.pictureGallery{
+    border-radius: 150px;
+}
+.paraGallery{
+    text-align: center;
+}
+.presentationGallery{
+    width: 100%;
     margin:0;
-    width: auto;
-    padding-inline: 20px;
+}
 
+.presentationGallery p{
+    padding-inline: 20px;
+}
+.boxGeneral{
+    justify-content: center;
 }
 .titleGeneral{
-    -webkit-text-stroke: 0px;
-    font-size: 30px;
-    margin-top: -45px;
+    font-size: 23px;
+    margin-top: 0;
+    padding: 20px;
+    font-weight: 800;
+    text-align: center;
 }
-.alternate #presentationGallery{
+.alternate .presentationGallery{
     margin:0;
 }
+.alternate .paraGeneral{
+text-align: center;
 }
+.alternate .titleGeneral{
+    text-align: center;
+}
+#sideNav{
+    display: none;
+}
+.menuNav ul li a {
+    font-size: 13px;
+}
+
+
+
+}
+
+@media  screen and (min-width: 425px) and (max-width: 767px) {
+
+
+    header {
+        width: 55px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: #2e2e2e;
+    }
+    header h1{
+        display: none;
+    }
+    header h2 {
+        font-size: 14px;
+        color: white;
+    }
+    header h1, h2{
+        font-size: 16px;
+    }
+    ul{
+        font-size: 13px;
+    }
+    a{
+        color: unset;
+    }
+    #navBar{
+        padding-inline: 20px;
+    }
+    
+    #nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .snap{    
+        scroll-snap-align: start;
+    }
+    
+    #menuOpen{
+        width: 100vw;
+        height: 100vh;
+        padding: 20px;
+        display: flex;
+
+    }
+    #close{
+        align-self: flex-end;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    
+    .menuNav{
+        padding: 15px;
+        width: 70%;
+    }
+    .menuNav h2{
+        font-size: 18px;
+    }
+    .menuNav ul li a{
+        font-size: 15px;
+    }
+
+    #contentAbout{
+        margin-top: 0;
+        flex-direction: column;
+        padding-inline: 40px;
+    }
+    
+    #titleAbout{
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    #pictureAbout{
+        width: auto;
+        height: 260px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    .material-icons
+    {
+        display: none!important;
+    }
+    
+    .paraGeneral{
+        font-size: 14px;
+        margin: 0;
+    }
+    
+    #skillSection{
+        height: auto;
+        flex-direction: column;
+        padding-inline: 20px;
+        padding-block: 10px;
+    }
+    .boxSkill{
+        margin: 20px;
+        align-self: center;
+        justify-content: center;
+        height: 75vh;
+        padding: 40px;
+        scroll-snap-align: center;
+    }
+    .paraSkill{
+        font-size: 13px;
+    }
+    .contentGallery{
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        padding-inline: 0;
+        width: 100%;
+    }
+    .shapePictureGallery{
+        padding: 0;
+        width: 330px;
+        height: 330px;
+    }
+    .pictureGallery{
+        border-radius: 180px;
+    }
+    .paraGallery{
+        text-align: center;
+    }
+    .presentationGallery{
+        width: 100%;
+        margin:0;
+    }
+    
+    .presentationGallery p{
+        padding-inline: 20px;
+    }
+    .boxGeneral{
+        justify-content: center;
+    }
+    .titleGeneral{
+        font-size: 22px;
+        margin-top: 0;
+        padding-block:20px;
+        padding-inline: 10px;
+        font-weight: 800;
+        text-align: center;
+    }
+    .alternate .presentationGallery{
+        margin:0;
+    }
+    .alternate .paraGeneral{
+    text-align: center;
+    }
+    .alternate .titleGeneral{
+        text-align: center;
+    }
+    #sideNav{
+        display: none;
+    }
+
+    [data-aos^=fade][data-aos^=fade] {
+        opacity: 1!important;
+        transition-property: none !important;
+    }
+    [data-aos=fade-down]{
+        transform: none !important;
+    }
+
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1024px) {
+
+    header {
+        width: 55px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: #2e2e2e;
+    }
+    header h1{
+        display: none;
+    }
+    header h2 {
+        font-size: 14px;
+        color: white;
+    }
+    header h1, h2{
+        font-size: 16px;
+    }
+    ul{
+        font-size: 13px;
+    }
+    a{
+        color: unset;
+    }
+    #navBar{
+        padding-inline: 20px;
+    }
+    
+    #nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: none;
+    flex-direction: row;
+    }
+    .snap{    
+        scroll-snap-align: start;
+    }
+    
+    #menuOpen{
+        width: 405px;
+        height: 100vh;
+        padding: 20px;
+        display: flex;
+
+    }
+    #close{
+        align-self: flex-end;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    
+    .menuNav{
+        padding: 15px;
+        width: fit-content;
+    }
+    .menuNav h2{
+        font-size: 18px;
+    }
+    .menuNav ul li a{
+        font-size: 15px;
+    }
+
+    #contentAbout{
+        margin-top: 0;
+        flex-direction: row;
+        padding-inline: 40px;
+    }
+    
+    #titleAbout{
+        font-size: 38px;
+    }
+    
+    #pictureAbout{
+        width: auto;
+        height: 260px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    .material-icons
+    {
+        display: none!important;
+    }
+    
+    .paraGeneral{
+        font-size: 14px;
+        margin: 0;
+    }
+    
+    #skillSection{
+        height: auto;
+        flex-direction: column;
+        padding-inline: 20px;
+        padding-block: 10px;
+    }
+    .boxSkill{
+        margin: 20px;
+        align-self: center;
+        justify-content: center;
+        height: 75vh;
+        padding: 40px;
+        scroll-snap-align: center;
+    }
+    .paraSkill{
+        font-size: 13px;
+    }
+    .contentGallery{
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        padding-inline: 0;
+        width: 100%;
+    }
+    .shapePictureGallery{
+        padding: 0;
+        width: 330px;
+        height: 330px;
+    }
+    .pictureGallery{
+        border-radius: 180px;
+    }
+    .paraGallery{
+        text-align: center;
+    }
+    .presentationGallery{
+        width: 80%;
+        margin:0;
+    }
+    
+    .presentationGallery p{
+        padding-inline: 20px;
+    }
+    .boxGeneral{
+        justify-content: center;
+    }
+    .titleGeneral{
+        font-size: 28px;
+        margin-top: 0;
+        padding-block: 20px;
+        padding-inline: 10px;
+        font-weight: 800;
+        text-align: center;
+    }
+    .alternate .presentationGallery{
+        margin:0;
+    }
+    .alternate .paraGeneral{
+    text-align: center;
+    }
+    .alternate .titleGeneral{
+        text-align: center;
+    }
+    #sideNav{
+        display: none;
+    }
+
+    [data-aos^=fade][data-aos^=fade] {
+        opacity: 1!important;
+        transition-property: none !important;
+    }
+    [data-aos=fade-down]{
+        transform: none !important;
+    }
+}
+
+@media  screen and (min-width: 1025px) and (max-width: 1240px) {
+    header{
+        width: 100vw;
+    }
+
+    #pictureAbout{
+        width: auto;
+        height: 280px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    #titleAbout{
+        font-size: 55px;
+    }
+    .paraGeneral{
+        font-size: 15px;
+    }
+    #contentAbout{
+        padding-inline: 80px;
+    }
+    #skillSection{
+        padding-inline: 0;
+    }
+    .boxSkill{
+        width: 220px;
+        height: 65vh;
+        padding: 35px;
+    }
+    .shapePictureGallery{
+        width: 450px;
+        height: 400px;
+    }
+    .titleGeneral{
+        font-size: 50px;
+    }
+    .presentationGallery{
+        width: 400px;
+    }
+    .paraSkill{
+        font-size: 13px;
+    }
+    #close{
+        align-self: start;
+    }
+    #menuOpen{
+        width: 450px;
+    }
+}
+
+@media  screen and (min-width: 1241px) and (max-width: 1440px) {
+    .paraAbout{
+        font-size: 19px;
+    }
+    .boxSkill{
+        height: 70vh;
+    }
+    #titleAbout{
+        font-size: 64px;
+    }
+
+}
+@media  screen and (min-width: 1961px) and (max-width: 2560px) {
+    #navBar{
+        height: 50px;
+        align-items: center;
+    }
+    header h1, h2{
+        font-size: 30px;
+    }
+    #pictureAbout{
+        width: 555px;
+        height: auto;
+        margin-right: 80px;
+    }
+    #contentAbout{
+        padding-inline: 360px;
+    }
+    #titleAbout{
+        font-size: 75px;
+    }
+    .paraGeneral{
+        font-size: 36px;
+    }
+    .material-icons{
+        font-size: 50px;
+    }
+    li{
+        margin-bottom: 15px;
+    }
+    ul{
+        margin-block: 50px;
+    }
+    .menuNav ul li a {
+        font-size: 25px;
+    }
+    #close{
+        font-size: 40px;
+    }
+    #menuOpen{
+        width: 800px;
+    }
+    .boxSkill{
+        width: 400px;
+        height: 65vh;
+        padding: 80px;
+    }
+    .paraSkill{
+        font-size: 25px;
+    }
+    .presentationGallery{
+        width: 1000px;
+        margin-right: -150px;
+    }
+    .contentGallery{
+        padding-inline: 0;
+    }
+    .shapePictureGallery{
+        width: 1000px;
+        height: 850px;
+    }
+    .titleGeneral{
+        font-size: 115px;
+    }
+    #sideNav{
+        font-size: 25px;
+    }
+    .alternate .presentationGallery{
+        margin-left: -150px
+    }
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+@media  screen and (min-width: 1441px) and (max-width: 1960px) {
+}
+@media  screen and (width: 1920px) and (height : 1080px) {
+    #contentAbout{
+        padding-inline: 200px;
+    }
+    #pictureAbout{
+        width: 630px;
+        height: auto;
+    }
+    #navBar{
+        align-items: center;
+        height: 40px;
+    }
+    header h1, h2{
+        font-size: 25px;
+    }
+    .paraGeneral{
+        font-size: 30px;
+    }
+    .menuNav ul li a {
+        font-size: 20px;
+    }
+    li{
+        margin-bottom: 10px;
+
+    }
+    .menuNav ul {
+        margin-block: 30px;
+    }
+    #menuOpen{
+        width: 600px;
+    }
+    .paraSkill{
+        font-size: 22px;
+    }
+    .boxSkill{
+        width: 340px;
+        padding: 65px;
+    }
+    .shapePictureGallery{
+        width: 900px;
+        height: 700px;
+    }
+    .contentGallery{
+        padding-inline: 0;
+    }
+    .presentationGallery{
+        width: 800px;
+    }
+    .titleGeneral{
+        font-size: 95px;
+    }
+    #sideNav{
+        font-size: 25px;
+    }
+    
+}
+
