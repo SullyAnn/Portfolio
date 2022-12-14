@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio">
+        
+        <!-- LINKS -->
+        <link rel="stylesheet" href="./css/galeryStyle.css"/>
+        <link rel="stylesheet" href="./css/detailStyle.css">
+        <link rel="stylesheet" href="./css/transitions.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+
+        <title>Portfolio Sully-Ann Sorimoutou</title>
+    </head>
+
+    <body>
+        <header>
+            <div id="navBar">
+                <h1 class="mediumSpacement"> <a href="./index.html">SULLY-ANN SORIMOUTOU</a></h1>
+                <h2><a href="">Menu</a></h2>
+            </div>
+            
+        </header>
+
+         <!-------------------- TRANSITIONS -------------------->
+
+         <div class="transition1 is-active"></div>
+
+         <!-------------------- MENU SECTION -------------------->
+
+         <section id="menuOpen" class="hidden">
+            <span id="close"><a href="" >X</a></span>
+
+            <div id="nav">
+                <div class="menuNav">
+                    <h2>CONTACT</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/sully-ann-sorimoutou-a75a32174/">LinkedIn</a></li>
+                        <li><a href="mailto:sori.sully@gmail.com">Mail</a></li>
+                    </ul>
+                </div>
+    
+                <div class="menuNav">
+                    <h2>MENU</h2>
+                    <ul>
+                        <li><a href="./index.html">Homepage</a></li>
+                        <li><a href="./detailPixelophonia.html">Pixelophonia web app</a></li>
+                        <li><a href="./detailFood.html">Food Info</a></li>
+                        <li><a href="./detailFullstack.html">Modular portfolio</a></li>
+                        <li><a href="./detailAnime.html" style="font-weight: 600;">Anime blog</a></li>
+                        <li><a href="./detailWanted.html">Imac Wanted </a></li>
+                        <li><a href="./detailVeggie.html">The Veggie</a></li>
+                         
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <main id="snaphere" >
+
+        <!--###################################################-->
+        <!--################ DETAILS SECTIONS #################-->
+        <!--###################################################-->
+
+        <!-------------------- PROGRAMMATION -------------------->
+   
+            <section id ="detailProgrammation"  class="boxGeneral boxDetail "> 
+                
+                <div id="explDetail" class= "hlineDetail snap ">
+                    <p class="subtitle subDetail"> FULLSTACK DEVELOPMENT </p>
+                    <h2 style ="background-color: #ffdbdd;" class="titleGeneral titleDetail mediumSpacement presentationDetail">Anime blog</h2>
+                </div> 
+
+                <div class="fullPicture snap">
+                    <img class="pictureGeneral" src="./images/New_projects/jpg/Anime_app_1.jpg" alt="Anime App mock up">
+                </div>
+
+                <div id = "detailContent" class="snap">
+
+                    <div id="detailGroupe">
+                         <div class="swiper">
+ 
+                             <div class=" imageDetail swiper-wrapper">
+                                <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/Anime_app_1.jpg" alt="Anime App mock up">
+                                <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/Anime_app_2.jpg" alt="Anime App mock up">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/Anime_app_3.jpg" alt="Anime App mock up">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/Anime_app_4.jpg" alt="Anime App mock up">
+
+
+                             </div>
+ 
+                             <!-- If we need navigation buttons -->
+                             <div class="swiper-button-prev"></div>
+                             <div class="swiper-button-next"></div>
+ 
+                         </div>
+                         
+                         <div id="explanationDetail">   
+                             <p  class="">
+                                This project was created with <strong> React.js and a JSON server</strong>. I wanted to create a simple application 
+                                that I and my siblings could use to rate the anime we watched. 
+                                Thus, for now, the user can add an article about an anime to the database and delete any article. 
+                                I will soon add the possibility to edit an existing article. Moreover, 
+                                I would like to create an admin system thanks to<strong> Google authentification </strong>.                             
+                             </p> 
+                         </div> 
+ 
+                     </div>
+                     <a href="./index.html" class="backButton"> ← Back </a>
+                 </div>
+            </section>
+
+        </main>
+    
+     <!-- JAVASCRIPT LINKS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+     <script src="./js/detail.js"></script>
+     
+    </body>
+</html>

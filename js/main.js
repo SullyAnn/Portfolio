@@ -97,22 +97,22 @@ projects.addEventListener("mouseleave", function(){
 /*-------------------- CHANGE CURRENT COLOR MENU ----------------------*/
 
 
-const Link_BackEnd = document.getElementById("Link_BackEnd");
-const Link_HP = document.getElementById("Link_HP");
-const Link_Hyper = document.getElementById("Link_Hyper");
+const Link_Pixelophonia = document.getElementById("Link_Pixelophonia");
+const Link_Food = document.getElementById("Link_Food");
+const Link_Fullstack = document.getElementById("Link_Fullstack");
+const Link_Anime = document.getElementById("Link_Anime");
+const Link_Maths = document.getElementById("Link_Maths");
 const Link_Veggie = document.getElementById("Link_Veggie");
-const Link_Cim = document.getElementById("Link_Cim");
-const Link_Foot = document.getElementById("Link_Foot");
 
 
-const arrayLink = [Link_BackEnd, Link_HP, Link_Hyper, Link_Veggie, Link_Cim, Link_Foot];
+const arrayLink = [Link_Pixelophonia, Link_Food, Link_Fullstack, Link_Anime, Link_Maths,Link_Veggie ];
 
-const Projet_BackEnd = document.getElementById("Projet_BackEnd");
-const Projet_HP = document.getElementById("Projet_HP");
-const Projet_Hyper = document.getElementById("Projet_Hyper");
+const Projet_Pixelophonia = document.getElementById("Projet_Pixelophonia");
+const Projet_Food = document.getElementById("Projet_Food");
+const Projet_Fullstack = document.getElementById("Projet_Fullstack");
+const Projet_Anime = document.getElementById("Projet_Anime");
+const Projet_Maths = document.getElementById("Projet_Maths");
 const Projet_Veggie = document.getElementById("Projet_Veggie");
-const Projet_Cimetiere = document.getElementById("Projet_Cimetiere");
-const Projet_Foot = document.getElementById("Projet_Foot");
 
 
 
@@ -132,22 +132,22 @@ function changeColorMenu(indiceTab, array){
 window.addEventListener('scroll', function () {
   let yScroll = window.pageYOffset +1;
 
-  if(yScroll > Projet_BackEnd.offsetTop && yScroll < Projet_HP.offsetTop){
+  if(yScroll > Projet_Pixelophonia.offsetTop && yScroll < Projet_Food.offsetTop){
     changeColorMenu(0,arrayLink);
   }
-  else if(yScroll > Projet_HP.offsetTop && yScroll < Projet_Hyper.offsetTop){
+  else if(yScroll > Projet_Food.offsetTop && yScroll < Projet_Fullstack.offsetTop){
     changeColorMenu(1,arrayLink);
   }
-  else if(yScroll > Projet_Hyper.offsetTop && yScroll < Projet_Veggie.offsetTop){
+  else if(yScroll > Projet_Fullstack.offsetTop && yScroll < Projet_Anime.offsetTop){
     changeColorMenu(2,arrayLink);
   }
-  else if(yScroll > Projet_Veggie.offsetTop && yScroll < Projet_Cimetiere.offsetTop){
+  else if(yScroll > Projet_Anime.offsetTop && yScroll < Projet_Maths.offsetTop){
     changeColorMenu(3,arrayLink);
   }
-  else if(yScroll > Projet_Cimetiere.offsetTop && yScroll < Projet_Foot.offsetTop){
+  else if(yScroll > Projet_Maths.offsetTop && yScroll < Projet_Veggie.offsetTop){
     changeColorMenu(4,arrayLink);
   }
-  else if(yScroll > Projet_Foot.offsetTop){
+  else if(yScroll > Projet_Veggie.offsetTop){
     changeColorMenu(5,arrayLink);
   }
 

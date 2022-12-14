@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio">
+        
+        <!-- LINKS -->
+        <link rel="stylesheet" href="./css/galeryStyle.css"/>
+        <link rel="stylesheet" href="./css/detailStyle.css">
+        <link rel="stylesheet" href="./css/transitions.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+        <title>Portfolio Sully-Ann Sorimoutou</title>
+    </head>
+
+    <body>
+        <header>
+            <div id="navBar">
+                <h1 class="mediumSpacement"> <a href="./index.html">SULLY-ANN SORIMOUTOU</a></h1>
+                <h2><a href="">Menu</a></h2>
+            </div>
+            
+        </header>
+
+         <!-------------------- TRANSITIONS -------------------->
+
+         <div class="transition1 is-active"></div>
+
+         <!-------------------- MENU SECTION -------------------->
+
+         <section id="menuOpen" class="hidden">
+            <span id="close"><a href="" >X</a></span>
+
+            <div id="nav">
+                <div class="menuNav">
+                    <h2>CONTACT</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/sully-ann-sorimoutou-a75a32174/">LinkedIn</a></li>
+                        <li><a href="mailto:sori.sully@gmail.com">Mail</a></li>
+                    </ul>
+                </div>
+    
+                <div class="menuNav">
+                    <h2>MENU</h2>
+                    <ul>
+                        <li><a href="./index.html">Homepage</a></li>
+                        <li><a href="./detailPixelophonia.html">Pixelophonia web app</a></li>
+                        <li><a href="./detailFood.html">Food Info</a></li>
+                        <li><a href="./detailFullstack.html" style="font-weight: 600;">Modular portfolio</a></li>
+                        <li><a href="./detailAnime.html">Anime blog</a></li>
+                        <li><a href="./detailWanted.html">Imac Wanted </a></li>
+                        <li><a href="./detailVeggie.html">The Veggie</a></li>
+                         
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <main id="snaphere" >
+
+        <!--###################################################-->
+        <!--################ DETAILS SECTIONS #################-->
+        <!--###################################################-->
+
+        <!-------------------- PROGRAMMATION -------------------->
+   
+            <section id ="detailProgrammation"  class="boxGeneral boxDetail "> 
+                
+                <div id="explDetail" class= "hlineDetail snap ">
+                    <p class="subtitle subDetail"> FULLSTACK DEVELOPMENT - UI/UX DESIGN </p>
+                    <h2 style ="background-color: #e2b1ff;" class="titleGeneral titleDetail mediumSpacement presentationDetail">Modular Portfolio</h2>
+                </div> 
+
+                <div class="fullPicture snap">
+                    <img class="pictureGeneral" src="./images/New_Projects/jpg/PORTFOLIO_BACK_0-min.jpg" alt="Fullstack project">
+                </div>
+
+                <div id = "detailContent" class="snap">
+
+                    <div id="detailGroupe">
+                         <div class="swiper">
+ 
+                             <div class=" imageDetail swiper-wrapper">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/PORTFOLIO_BACK_0-min.jpg" alt="Fullstack project">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/PORTFOLIO_BACK_0.jpg" alt="Fullstack project">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/PORTFOLIO_BACK_1.jpg" alt="Fullstack project">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/PORTFOLIO_BACK_2.jpg" alt="Fullstack project">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/PORTFOLIO_BACK_3.jpg" alt="Fullstack project">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/PORTFOLIO_BACK_4.jpg" alt="Fullstack project">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/PORTFOLIO_BACK_5.jpg" alt="Fullstack project">
+                                 <img class=" swiper-slide pictureGeneral" src="./images/New_Projects/jpg/PORTFOLIO_BACK_6.jpg" alt="Fullstack project">
+
+                             </div>
+ 
+                             <!-- If we need navigation buttons -->
+                             <div class="swiper-button-prev"></div>
+                             <div class="swiper-button-next"></div>
+ 
+                         </div>
+                         
+                         <div id="explanationDetail">   
+                             <p  class="">
+                                This project realized in a group of 4 is a portfolio template. 
+                                We wanted to create a template linked to a database that any students could use. 
+                                Thus the website is divided into two parts: a <strong>visitor part and an adminstator part</strong>. 
+                                In the visitor part, this website is a simple portfolio. 
+                                Whereas, after the connexion, the administrator can<strong>modify, delete, or add elements</strong> to the portfolio. 
+                                This exchange system was mostly done in PHP and Javascript. <a style="text-decoration: underline" href="https://tanguylorent.com/PORTFOLIO_PROJECT/">link of the project</a> 
+                             </p> 
+                         </div> 
+ 
+                     </div>
+                     <a href="./index.html" class="backButton"> ← Back</a>  
+                 </div>
+
+            </section>
+
+        </main>
+    
+     <!-- JAVASCRIPT LINKS -->
+     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+     <script src="./js/detail.js"></script>
+     
+    </body>
+</html>
