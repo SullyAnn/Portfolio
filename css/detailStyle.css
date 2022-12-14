@@ -251,6 +251,9 @@ strong{
         #explanationDetail{
             font-size: 13px;
             width: 100%;
+            padding-inline: 20px;
+            box-sizing: border-box;
+            margin-top: 40px;
         }
         #explDetail{
             display: none;
@@ -260,7 +263,7 @@ strong{
         }
         #detailContent{
             height: 100%;
-            gap: 50px;
+            gap: 15px;
         }
         .boxDetail{
             margin-block: 20px;
